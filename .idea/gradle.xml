@@ -3,11 +3,59 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/api_gateway" name="api_gateway">
+                <projects>
+                  <project path="$PROJECT_DIR$/api_gateway" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/eureka_client" name="eureka_client">
+                <projects>
+                  <project path="$PROJECT_DIR$/eureka_client" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/eureka_server" name="eureka_server">
+                <projects>
+                  <project path="$PROJECT_DIR$/eureka_server" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api_gateway" />
+            <option value="$PROJECT_DIR$/eureka_client" />
+            <option value="$PROJECT_DIR$/eureka_server" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api_gateway" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/api_gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka_client" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/eureka_client" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka_server" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/eureka_server" />
           </set>
         </option>
       </GradleProjectSettings>
