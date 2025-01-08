@@ -6,9 +6,14 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
-              <build path="$PROJECT_DIR$/api_gateway" name="api_gateway">
+              <build path="$PROJECT_DIR$/api-gateway" name="api-gateway">
                 <projects>
-                  <project path="$PROJECT_DIR$/api_gateway" />
+                  <project path="$PROJECT_DIR$/api-gateway" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/eureka-client-2" name="eureka-client-2">
+                <projects>
+                  <project path="$PROJECT_DIR$/eureka-client-2" />
                 </projects>
               </build>
               <build path="$PROJECT_DIR$/eureka_client" name="eureka_client">
@@ -29,17 +34,26 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/api_gateway" />
+            <option value="$PROJECT_DIR$/api-gateway" />
+            <option value="$PROJECT_DIR$/eureka-client-2" />
             <option value="$PROJECT_DIR$/eureka_client" />
             <option value="$PROJECT_DIR$/eureka_server" />
           </set>
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/api_gateway" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api-gateway" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/api_gateway" />
+            <option value="$PROJECT_DIR$/api-gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/eureka-client-2" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/eureka-client-2" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,15 +1,19 @@
-package ru.iteco.eureka_client.controller;
+package ru.iteco.eurekaclient2.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/main")
+@RequestMapping("/new")
 public class TestController {
 
-    @GetMapping("/test")
+    @Value("${eureka.instance.instance-id}")
+    private String port;
+
+    @GetMapping("/name")
     public String getTest() {
-        return "test1";
+        return port;
     }
 }
